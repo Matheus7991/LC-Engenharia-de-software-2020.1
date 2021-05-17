@@ -1,0 +1,146 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>Relation</id><coordinates><x>10</x><y>210</y><w>2010</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;1990;20</additional_attributes></element><element><id>Text</id><coordinates><x>50</x><y>0</y><w>100</w><h>70</h></coordinates><panel_attributes>GUI
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>40</x><y>230</y><w>100</w><h>70</h></coordinates><panel_attributes>Negocio
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>20</x><y>950</y><w>110</w><h>70</h></coordinates><panel_attributes>Negocio-Dados
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>20</x><y>1230</y><w>110</w><h>70</h></coordinates><panel_attributes>Dados
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>0</x><y>930</y><w>2900</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;2880;20</additional_attributes></element><element><id>Relation</id><coordinates><x>0</x><y>1210</y><w>2900</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;2880;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1080</x><y>280</y><w>210</w><h>190</h></coordinates><panel_attributes>Fachada
+--
+String CPFUsuarioAtual
+--
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>750</x><y>280</y><w>210</w><h>190</h></coordinates><panel_attributes>Main
+--
+Static Fachada Fachada
+--
+void Terminar()
+--
+-Iniciar e terminar o programa</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1080</x><y>0</y><w>210</w><h>190</h></coordinates><panel_attributes>MainWindow
+--
+
+--
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>650</x><y>680</y><w>210</w><h>190</h></coordinates><panel_attributes>Account
+--
+String CPF
+String Nome
+String OBS
+String Funçao
+String Horario
+String Salario
+String SenhaLogin
+Bool AcessoX
+--
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>950</x><y>340</y><w>150</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+</panel_attributes><additional_attributes>10;20;130;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>250</x><y>680</y><w>280</w><h>190</h></coordinates><panel_attributes>ControleAccount
+--
+Static Array&lt;Account&gt; contas
+--
+Static void Criarconta(String CPF,String Senha)
+Static Account RemoverConta(String CPF)
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>750</y><w>150</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=*
+m2=1
+Armazena &gt;</panel_attributes><additional_attributes>130;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>460</y><w>660</w><h>240</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+</panel_attributes><additional_attributes>10;220;10;130;630;130;630;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1170</x><y>180</y><w>40</w><h>120</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>870</x><y>680</y><w>280</w><h>190</h></coordinates><panel_attributes>ControleRefeiçao
+--
+Static Array&lt;Refeiçao&gt; Refeiçoes
+--
+Static void CriarRefei(String Nome,String Preço)
+Static Account RemoverRefei(String Nome)
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1230</x><y>680</y><w>210</w><h>190</h></coordinates><panel_attributes>Refeiçao
+--
+String Nome
+String Preço
+--
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1140</x><y>740</y><w>110</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=*
+m2=1
+Armazena &gt;</panel_attributes><additional_attributes>90;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1830</x><y>680</y><w>270</w><h>190</h></coordinates><panel_attributes>Pedido
+--
+String CPFCliente
+Static Array&lt;Refeiçao&gt; Refeiçoes
+String PreçoTotal
+String Local
+String CustoExtra
+String Prazo
+--
+void AddRefei (String Nome)
+void RemoverRefei (String Nome)
+--
+-Local pode determinar a mesa do restaurante, 
+ou um lugar fora do restaurante.</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1460</x><y>680</y><w>280</w><h>190</h></coordinates><panel_attributes>ControlePedidos
+--
+Static Array&lt;Refeiçao&gt; Refeiçoes
+--
+Static void CriarPedido(String CPF,String Senha)
+Static Account RemoverPedido(String CPF)
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1280</x><y>430</y><w>250</w><h>270</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+</panel_attributes><additional_attributes>220;250;220;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1730</x><y>690</y><w>120</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=*
+m2=1
+Armazena &gt;</panel_attributes><additional_attributes>100;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1400</x><y>860</y><w>710</w><h>90</h></coordinates><panel_attributes>lt=-
+m1=*
+m2=1
+&lt; Armazena</panel_attributes><additional_attributes>10;10;10;70;680;70;680;10</additional_attributes></element><element><id>Relation</id><coordinates><x>960</x><y>460</y><w>260</w><h>240</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+</panel_attributes><additional_attributes>10;220;10;160;230;160;230;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>2120</x><y>680</y><w>280</w><h>190</h></coordinates><panel_attributes>ControleEstoque
+--
+Static Array&lt;Estoque&gt; Estoques
+--
+Static void CriarEstoque(String CPF,String Senha)
+Static Account RemoverEstoque(String CPF)
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2490</x><y>680</y><w>280</w><h>190</h></coordinates><panel_attributes>Estoque
+--
+String Nome
+String Quantidade
+String Validade
+--
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2390</x><y>710</y><w>120</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=*
+m2=1
+Armazena &gt;</panel_attributes><additional_attributes>100;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1280</x><y>360</y><w>900</w><h>340</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+</panel_attributes><additional_attributes>870;320;870;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>250</x><y>1000</y><w>280</w><h>190</h></coordinates><panel_attributes>RepositorioAccount
+--
+--
+Static Array&lt;Account&gt; Load()
+Static void Save(Array&lt;Account&gt; A)
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>870</x><y>1000</y><w>280</w><h>190</h></coordinates><panel_attributes>RepositorioRefeiçao
+--
+--
+Static Array&lt;Refeiçao&gt; Load()
+Static void Save(Array&lt;Refeiçao&gt; A)
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1460</x><y>1000</y><w>280</w><h>190</h></coordinates><panel_attributes>RepositorioPedidos
+--
+--
+Static Array&lt;Pedido&gt; Load()
+Static void Save(Array&lt;Pedido&gt; A)
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2120</x><y>1000</y><w>280</w><h>190</h></coordinates><panel_attributes>RepositorioEstoque
+--
+--
+Static Array&lt;Estoque&gt; Load()
+Static void Save(Array&lt;Estoque&gt; A)
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>370</x><y>860</y><w>40</w><h>160</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+</panel_attributes><additional_attributes>10;140;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>990</x><y>860</y><w>40</w><h>160</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+</panel_attributes><additional_attributes>10;140;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1610</x><y>860</y><w>40</w><h>160</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+</panel_attributes><additional_attributes>10;140;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2250</x><y>860</y><w>40</w><h>160</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+</panel_attributes><additional_attributes>10;140;10;10</additional_attributes></element></diagram>
