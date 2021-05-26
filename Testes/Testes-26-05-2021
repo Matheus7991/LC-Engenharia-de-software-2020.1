@@ -1,0 +1,24 @@
+26/05/2021
+
+~~Codigo
+Pedidos : (erro) atualizar estado quando todas as refeiçoes estiverem prontas
+          (adiçao) exibir cardapio quando adicionar uma refeiçao
+          (adiçao) funçao remover pedido
+          (erro) dar a entrada quando enviar para a cozinha
+
+Cozinha : (erro) dar a saida
+
+Contas : (adiçao) exibir lista de perfis quando for editar e adicionar o perfil de uma conta
+
+
+
+
+
+24/05/2021
+
+~~Diagramas e codigo
+Corrigir tipos de variaveis (Feito no diagrama) (falta fazer no codigo)
+
+Fachada nao precisa ter funçoes estaticas (Feito no diagrama) (falta fazer no codigo)
+
+Controle estoque , itempedido é reduzido por refeiçao (Feito no diagrama) (falta fazer no codigo)
